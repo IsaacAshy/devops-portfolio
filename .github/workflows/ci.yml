@@ -1,0 +1,27 @@
+name: CI Pipeline
+
+on: [push]
+
+jobs:
+	build:
+		runs-on: ubuntu-latest
+		steps:
+			- name: Checkout code
+			  uses: actionsname: CI Pipeline
+name: CI Pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: echo "Installing dependencies..."
+
+      - name: Run tests
+        run: echo "Running tests..."
+
